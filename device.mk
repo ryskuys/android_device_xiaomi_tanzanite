@@ -25,6 +25,8 @@ $(call inherit-product-if-exists, vendor/private/keys/keys.mk)
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+
 # AB OTA Configuration
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
