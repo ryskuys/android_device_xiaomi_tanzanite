@@ -92,6 +92,7 @@ PRODUCT_PACKAGES += \
     libdynproc
 
 PRODUCT_PACKAGES += \
+    XiaomiDolby \
     MtkInCallService
 
 # Audio Configuration
