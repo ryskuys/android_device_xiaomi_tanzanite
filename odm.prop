@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 ro.product.property_source_order=odm,product,vendor,system_ext,system
 import /odm/etc/build_${ro.boot.product.hardware.sku}.prop
+=======
+ro.product.device_for_attestation=tanzanite
+ro.product.manufacturer_for_attestation=Xiaomi
+>>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)

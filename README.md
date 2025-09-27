@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Android device tree for Xiaomi Redmi Note 14 4G (tanzanite)
+=======
+# Android device tree for Android mainline (generic)
+>>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 
 ```
 #
