@@ -491,7 +491,7 @@ $(VPUD_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_PLATFORM_LINKS) $(GATEKEEPER_SYMLINKS) $(SENSORS_SYMLINKS) $(AUDIO_SYMLINKS) $(VPUD_SYMLINKS)
 
 =======
-ifeq ($(TARGET_DEVICE),generic)
+ifeq ($(TARGET_DEVICE),tanzanite)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 >>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 endif
