@@ -11,7 +11,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_generic.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_generic-user \
-    lineage_generic-userdebug \
-    lineage_generic-eng
+    lineage_tanzanite-user \
+    lineage_tanzanite-userdebug \
+    lineage_tanzanite-eng
 >>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
