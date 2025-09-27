@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/tanzanite
-<<<<<<< HEAD
 KERNEL_PATH := device/xiaomi/tanzanite-kernel
 
 # Architecture
@@ -291,6 +290,10 @@ BOARD_AVB_VENDOR_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_VENDOR_BOOT_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX := 1
 BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
+
+# FINGERPRINTS
+TARGET_USES_FOD := true
+TARGET_HAS_FINGERPRINT_VENDOR_HAL := true
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
