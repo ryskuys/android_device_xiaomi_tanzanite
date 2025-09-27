@@ -32,7 +32,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_ENABLE_BLUR := true
 =======
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := mainline
+PRODUCT_MODEL := Redmi Note 14 4G
 PRODUCT_MANUFACTURER := xiaomi
 >>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 
