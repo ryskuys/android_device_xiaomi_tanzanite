@@ -23,12 +23,11 @@ IGNORE_PREFER32_ON_DEVICE := true
 # Build the 32 bit targets
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-2a
-=======
 
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS +=
-BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 # Architecture
 TARGET_ARCH := arm64
@@ -39,24 +38,19 @@ TARGET_CPU_VARIANT := cortex-a55
 TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
-<<<<<<< HEAD
 # OTA Updates
 TARGET_OTA_ASSERT_DEVICE := tanzanite
 
-=======
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := tanzanite
 TARGET_NO_BOOTLOADER := true
 
-<<<<<<< HEAD
 # Plaform
 BOARD_VENDOR := xiaomi
 BOARD_HAS_MTK_HARDWARE := true
@@ -91,13 +85,12 @@ TARGET_NO_KERNEL_OVERRIDE := true
 # Workaround to make lineage's soong generator work
 TARGET_KERNEL_SOURCE := device/xiaomi/tanzanite-kernel/kernel-headers
 
-LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz
+LOCAL_KERNEL := $(KERNEL_PATH)/Image.gz-dtb
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 # DTB
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
-BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
 
 # Kernel modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.vendor_ramdisk))
@@ -220,7 +213,7 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/tanzanite/BoardConfigVendor.mk
-=======
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 
@@ -230,7 +223,7 @@ BOARD_KERNEL_BASE := 0x3fff8000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := tanzanite_defconfig
@@ -238,7 +231,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/tanzanite
 
 #
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
-include build/make/target/board/BoardConfigKernelGki.mk
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -300,4 +292,4 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Inherit the proprietary files
 include vendor/xiaomi/tanzanite/BoardConfigVendor.mk
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+

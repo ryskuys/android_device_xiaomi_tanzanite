@@ -1,14 +1,10 @@
 //
-<<<<<<< HEAD
 // Copyright (C) 2024 LineageOS
-=======
 // Copyright (C) 2025 The LineageOS Project
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
-<<<<<<< HEAD
 prebuilt_etc {
     name: "init.recovery.usb.rc",
     src: "etc/init.recovery.usb.rc",
@@ -47,12 +43,7 @@ prebuilt_etc {
     src: "etc/init/hw/init.batterysecret.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-// Init scripts
-sh_binary {
-    name: "init.insmod.sh",
-    src: "bin/init.insmod.sh",
-    vendor: true,
+
 }
 
 // Init configuration files
@@ -103,12 +94,10 @@ prebuilt_etc {
     src: "etc/init.connectivity.common.rc",
     sub_dir: "init/hw",
     vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 }
 
 prebuilt_etc {
     name: "init.connectivity.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.connectivity.rc",
     sub_dir: "init/hw",
     vendor: true
@@ -119,29 +108,18 @@ prebuilt_etc {
     src: "etc/init/hw/init.fingerprint.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-    src: "etc/init.connectivity.rc",
-    sub_dir: "init/hw",
-    vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 }
 
 prebuilt_etc {
     name: "init.modem.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.modem.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-    src: "etc/init.modem.rc",
-    sub_dir: "init/hw",
-    vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+
 }
 
 prebuilt_etc {
     name: "init.mt6789.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.mt6789.rc",
     sub_dir: "init/hw",
     vendor: true
@@ -152,63 +130,39 @@ prebuilt_etc {
     src: "etc/init/hw/init.mt6789.power.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-    src: "etc/init.mt6789.rc",
-    sub_dir: "init/hw",
-    vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+
 }
 
 prebuilt_etc {
     name: "init.mt6789.usb.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.mt6789.usb.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-    src: "etc/init.mt6789.usb.rc",
-    sub_dir: "init/hw",
-    vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+
 }
 
 prebuilt_etc {
     name: "init.mtkgki.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.mtkgki.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-    src: "etc/init.mtkgki.rc",
-    sub_dir: "init/hw",
-    vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+
 }
 
 prebuilt_etc {
     name: "init.project.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.project.rc",
     sub_dir: "init/hw",
     vendor: true
-=======
-    src: "etc/init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
+
 }
 
 prebuilt_etc {
     name: "init.sensor_2_0.rc",
-<<<<<<< HEAD
     src: "etc/init/hw/init.sensor_2_0.rc",
     sub_dir: "init/hw",
     vendor: true
-}
-=======
-    src: "etc/init.sensor_2_0.rc",
-    sub_dir: "init/hw",
-    vendor: true,
+
 }
 
 prebuilt_etc {
@@ -273,4 +227,3 @@ prebuilt_etc {
     src: "etc/fstab.enableswap",
     vendor: true,
 }
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)

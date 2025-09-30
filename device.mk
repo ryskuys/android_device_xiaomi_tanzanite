@@ -4,7 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-<<<<<<< HEAD
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
@@ -42,7 +41,7 @@ AB_OTA_PARTITIONS := \
 PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
-=======
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -53,12 +52,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 
 PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
-<<<<<<< HEAD
     update_verifier \
     otapreopt_script \
     checkpoint_gc
@@ -145,7 +142,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.xiaomi \
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
     libudfpshandler
 
 PRODUCT_PACKAGES += \
@@ -189,7 +186,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+    android.hardware.light@2.0-service.aw2013
 
 # MediaCas
 PRODUCT_PACKAGES += \
@@ -243,7 +240,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal \
-    android.hardware.sensors@2.0-subhal-impl-1.0:64 \
+    android.hardware.sensors@1.0-impl \
     sensors.dynamic_sensor_hal:64
 
 PRODUCT_COPY_FILES += \
@@ -334,7 +331,6 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6789.rc \
     init.mt6789.power.rc \
-=======
     update_verifier
 
 PRODUCT_PACKAGES += \
@@ -379,12 +375,10 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6789.rc \
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
     init.mt6789.usb.rc \
     init.mtkgki.rc \
     init.project.rc \
     init.sensor_2_0.rc \
-<<<<<<< HEAD
     init.recovery.usb.rc \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
@@ -436,8 +430,7 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
-=======
+    android.hardware.vibrator-service.mediatek \
     init_connectivity.rc \
     meta_init.connectivity.common.rc \
     meta_init.connectivity.rc \
@@ -453,7 +446,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
->>>>>>> acc6711 (Tanzanite: Initial LineageOS 21.0 Device Tree)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/tanzanite/tanzanite-vendor.mk)
